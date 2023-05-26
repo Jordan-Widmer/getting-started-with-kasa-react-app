@@ -1,0 +1,16 @@
+.tag {
+  background: var(--primary-color);
+  border-radius: 10px;
+  display: inline-flex;
+  color: #fff;
+  font-size: 0px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  /* width: 115px; */
+  height: 25px;
+  padding: 2px 20px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  margin-right: 10px;
+}

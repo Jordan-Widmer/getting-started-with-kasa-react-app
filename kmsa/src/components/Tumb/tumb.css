@@ -1,0 +1,28 @@
+.tumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  display: flex;
+  align-items: flex-end;
+  color: #ffffff;
+  padding: 20px;
+  margin-bottom: 50px;
+  /* margin-right: 20px; */
+  background-size: cover;
+}
+
+.tumb-container {
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.tumb-container:hover {
+  transform: scale(1.05);
+}

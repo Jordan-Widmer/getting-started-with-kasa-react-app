@@ -1,0 +1,40 @@
+.collapse {
+    width: 100%;
+    background: #F6F6F6;
+    margin: 33px 0px;
+}
+
+.collapse-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 47px;
+    background: var(--primary-color);
+    border-radius: 5px;
+    color: #fff;
+    padding: 2px 18px;
+}
+
+.collapse-header div {
+    font-size: 18px;
+}
+
+.collapse-body {
+    border-radius: 5px;
+    padding: 2px 27px;
+    color: var(--primary-color);
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+    padding-bottom: 10px;
+    letter-spacing: 0em;
+    margin: 15px 0px 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    .collapse-container {
+        margin: auto;
+        width: 90%;
+    }
+}
