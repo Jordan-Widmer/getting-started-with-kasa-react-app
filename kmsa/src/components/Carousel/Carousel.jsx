@@ -7,7 +7,7 @@ function Carousel({ images }) {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
   useEffect(() => {
-    if (images.length <= 1) return; // Ajouté pour empêcher le défilement si une seule image
+    if (images.length <= 1) return;
 
     const timer = setInterval(() => {
       if (currentSlideIndex + 1 < images.length) {
@@ -20,7 +20,7 @@ function Carousel({ images }) {
     return () => {
       clearInterval(timer);
     };
-  }, [currentSlideIndex, images.length]); // Ajouté images.length pour réagir aux changements du nombre d'images
+  }, [currentSlideIndex, images.length]);
 
   const leftSlide = () => {
     if (currentSlideIndex <= 0) {
@@ -58,10 +58,11 @@ function Carousel({ images }) {
           </div>
         )}
 
-        <div className="slider-counter-container">
-          {" "}
-          {currentSlideIndex + 1 + " / " + images.length}
-        </div>
+        {images.length > 1 && (
+          <div className="slider-counter-container">
+            {currentSlideIndex + 1 + " / " + images.length}
+          </div>
+        )}
       </div>
     </div>
   );
